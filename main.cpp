@@ -31,6 +31,7 @@
 #include "bookSearch.h"
 #include "bookRemove.h"
 #include "bookSort.h"
+#include "saveLibrary.h"
 
 using namespace std;
 
@@ -43,6 +44,7 @@ int main(void)
 	string query; // For searching books
 	string isbnToRemove; // For removing books by ISBN
 	string criteria; // For sorting criteria
+	string filename; // For saving the library to a file
 
     // Create a vector to hold Book objects
     vector<Book> library;
@@ -69,8 +71,9 @@ int main(void)
 		cout << "5. Search for a book" << endl;
 		cout << "6. Remove a book" << endl;
 		cout << "7. Sort library collection" << endl;
-        cout << "8. Exit" << endl;
-        cout << "Please enter your choice (1-8): ";
+		cout << "8. Save library collection to file" << endl;
+        cout << "9. Exit" << endl << endl;
+        cout << "Please enter your choice (1-9): ";
 
         int choice;
         cin >> choice;
@@ -126,6 +129,12 @@ int main(void)
 			cout << "Library sorted by " << criteria << "." << endl;
 			break;
         case 8:
+            // Save the library collection to a file
+            cout << "Enter the filename to save the library collection: ";
+            getline(cin, filename);
+            saveLibrary(library, filename);
+            break;
+        case 9:
             cout << "Exiting the program." << endl;
             loopVar = false;
             break;

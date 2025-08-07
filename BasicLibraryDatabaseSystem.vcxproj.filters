@@ -36,6 +36,9 @@
     <ClCompile Include="bookSort.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="saveLibrary.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="standards.h">
@@ -62,5 +65,18 @@
     <ClInclude Include="bookSort.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="saveLibrary.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnsortedLibrary.txt">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="SortedLibrary.txt">
+      <Filter>Source Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

@@ -130,6 +130,7 @@
     <ClCompile Include="bookSearch.cpp" />
     <ClCompile Include="bookSort.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="saveLibrary.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="bookCheckout.h" />
@@ -139,7 +140,14 @@
     <ClInclude Include="bookSearch.h" />
     <ClInclude Include="bookSort.h" />
     <ClInclude Include="bookStruct.h" />
+    <ClInclude Include="saveLibrary.h" />
     <ClInclude Include="standards.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnsortedLibrary.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="SortedLibrary.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
