@@ -8,20 +8,6 @@
 *
 ************************************************/
 
-// TASKS
-// 0. Keep everything clean and organized
-// 0.5 Add the ability to add books to the library
-// 1. Add the ability to check out books
-// 2. Add the ability to return books
-// 3. Implement a search feature to find books by title or author
-// 4. Add a feature to list all available books
-// 5. Implement a feature to remove books from the library
-// 6. Add a feature to save the library collection to a file
-// 7. Implement a feature to load the library collection from a file
-// 8. Add error handling for invalid inputs
-// 9. Implement a user interface for better interaction
-// 10. Add a feature to sort books by title, author, or availability
-
 // Include necessary headers
 #include "standards.h"
 #include "bookStruct.h"
@@ -32,6 +18,7 @@
 #include "bookRemove.h"
 #include "bookSort.h"
 #include "saveLibrary.h"
+#include "loadLibrary.h"
 
 using namespace std;
 
@@ -72,8 +59,9 @@ int main(void)
 		cout << "6. Remove a book" << endl;
 		cout << "7. Sort library collection" << endl;
 		cout << "8. Save library collection to file" << endl;
-        cout << "9. Exit" << endl << endl;
-        cout << "Please enter your choice (1-9): ";
+		cout << "9. Load library collection from file" << endl;
+        cout << "10. Exit" << endl << endl;
+        cout << "Please enter your choice (1-10): ";
 
         int choice;
         cin >> choice;
@@ -135,6 +123,12 @@ int main(void)
             saveLibrary(library, filename);
             break;
         case 9:
+			// Load the library collection from a file
+			cout << "Enter the filename to load the library collection: ";
+			getline(cin, filename);
+			loadLibrary(library, filename);
+            break;
+        case 10:
             cout << "Exiting the program." << endl;
             loopVar = false;
             break;

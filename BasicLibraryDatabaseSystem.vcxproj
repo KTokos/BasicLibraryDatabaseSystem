@@ -129,6 +129,7 @@
     <ClCompile Include="bookReturn.cpp" />
     <ClCompile Include="bookSearch.cpp" />
     <ClCompile Include="bookSort.cpp" />
+    <ClCompile Include="loadLibrary.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="saveLibrary.cpp" />
   </ItemGroup>
@@ -140,6 +141,7 @@
     <ClInclude Include="bookSearch.h" />
     <ClInclude Include="bookSort.h" />
     <ClInclude Include="bookStruct.h" />
+    <ClInclude Include="loadLibrary.h" />
     <ClInclude Include="saveLibrary.h" />
     <ClInclude Include="standards.h" />
   </ItemGroup>
